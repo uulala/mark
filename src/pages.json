@@ -1,0 +1,64 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "任务"
+			}
+		},
+		{
+			"path": "pages/achieve/index",
+			"style": {
+				"navigationBarTitleText": "进度"
+			}
+		},
+		{
+			"path": "pages/draft/index",
+			"style": {
+				"navigationBarTitleText": "画板"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#2c2c2c",
+		"selectedColor": "#409eff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "任务",
+				"iconPath": "/static/icon/home.png",
+				"selectedIconPath": "/static/icon/home2.png"
+			},
+			{
+				"pagePath": "pages/achieve/index",
+				"text": "进度",
+				"iconPath": "/static/icon/star.png",
+				"selectedIconPath": "/static/icon/star2.png"
+			},
+			{
+				"pagePath": "pages/draft/index",
+				"text": "画板",
+				"iconPath": "/static/icon/brush.png",
+				"selectedIconPath": "/static/icon/brush2.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的",
+				"iconPath": "/static/icon/user.png",
+				"selectedIconPath": "/static/icon/user2.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "mark",
+		"navigationBarBackgroundColor": "#8ed1fc",
+		"backgroundColor": "#8ed1fc"
+	}
+}
