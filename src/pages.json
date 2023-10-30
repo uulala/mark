@@ -3,13 +3,13 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "任务"
+				"navigationBarTitleText": "今日任务"
 			}
 		},
 		{
 			"path": "pages/achieve/index",
 			"style": {
-				"navigationBarTitleText": "进度"
+				"navigationBarTitleText": "任务进度"
 			}
 		},
 		{
@@ -58,7 +58,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "mark",
-		"navigationBarBackgroundColor": "#8ed1fc",
-		"backgroundColor": "#8ed1fc"
+		"navigationBarBackgroundColor": "#a7dbfb",
+		"backgroundColor": "#a7dbfb"
 	}
 }

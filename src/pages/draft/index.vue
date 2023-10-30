@@ -33,7 +33,7 @@
 				canvas: null,
 				ctx: null,
 				color1: "#7bdcb5",
-				color2: "#8ed1fc",
+				color2: "#a7dbfb",
 				color3: "red",
 				color4: "#333",
 				width: 0,
@@ -244,7 +244,7 @@
 	.page-wrapper {
 		position: relative;
 		height: 100vh;
-		background: linear-gradient(to bottom, #c0e5fd, white);
+		background: linear-gradient(to bottom, #a7dbfb,white, white, white);
 	}
 
 	.tool-wrapper {
@@ -273,7 +273,7 @@
 	}
 
 	.color2 {
-		background: #8ed1fc;
+		background: #a7dbfb;
 	}
 
 	.color3 {
@@ -295,7 +295,7 @@
 	.draft {
 		width: 100vw;
 		height: calc(100vh - 50px);
-		/* border-top: 1px dashed #8ed1fc; */
+		/* border-top: 1px dashed #a7dbfb; */
 	}
 
 	.page-box {
@@ -308,8 +308,8 @@
 
 	.page-btn {
 		position: absolute;
-		/* background: #8ed1fc; */
-		/* border: 1px dashed #8ed1fc; */
+		/* background: #a7dbfb; */
+		/* border: 1px dashed #a7dbfb; */
 		border-radius: 5px;
 		padding: 2px 3px;
 		color: white;

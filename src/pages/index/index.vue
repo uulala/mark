@@ -1,7 +1,7 @@
 <template>
   <view id="mark-list-content" class="mark-list-wrapper">
     <view class="wrapper2">
-      <view class="title">今日任务</view>
+      <!-- <view class="title">今日任务</view> -->
       <view v-for="(item) in todayTask" :key="item.childId" class="row">
         <span class="mark-name">
           <span class="sort"></span>
@@ -141,11 +141,12 @@ export default {
     overflow: scroll;
     padding-bottom: 40px;
     box-sizing: border-box;
+    background: linear-gradient(to bottom, #a7dbfb, white,  white, white);
+    font-size: 18px;
 }
 .title{
   color: white;
-  background:#7bdcb5;
-  background: linear-gradient(to bottom right, #8ed1fc,  #7bdcb5);
+  
   padding: 8px 5px;
 }
 .wrapper2{
@@ -158,7 +159,7 @@ export default {
   margin: 5px 10px;
   padding: 8px 10px;
   /* padding: 3px 0; */
-  border-bottom: 1px dashed #8ed1fc;
+  border-bottom: 1px dashed #a7dbfb;
 }
 .mark-name{
   display: flex;
@@ -169,7 +170,7 @@ export default {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #8ed1fc;
+  background: #a7dbfb;
   margin-right: 8px;
 }
 .check-icon{

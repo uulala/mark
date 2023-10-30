@@ -13,13 +13,7 @@ export default {
 </script>
 
 <style>
-/*每个页面公共css */
+/*全局公共css */
 @import url('./static/css/animate.css');
-.common-tip {
-  position: absolute;
-  top: 10px;
-  text-align: center;
-  width: 100vw;
-  color: #7bdcb5;
-}
+@import url('./static/css/main.css');
 </style>

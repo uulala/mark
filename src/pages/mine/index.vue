@@ -15,7 +15,7 @@ import tips from '../../components/tips/index.js'
 export default {
   data() {
     return {
-      userName: "momo",
+      userName: "微信用户",
     };
   },
   onLoad() {},
@@ -42,7 +42,7 @@ export default {
 .content{
   /* background: #eee; */
   padding: 10px;
-  background: linear-gradient(to bottom right, #8ed1fc, white,  #7bdcb5);
+  background: linear-gradient(to bottom, #a7dbfb, white, white,  white);
 }
 .user-box{
   padding: 10px 5px;
@@ -65,9 +65,6 @@ export default {
   height: calc(100vh  - 160px);
   padding: 10px 5px;
   box-sizing: border-box;
-  /* background: linear-gradient(to bottom right, #7bdcb5, #8ed1fc); */
-
-  /* color: white; */
 }
 .avatar-btn{
   width: 50px;

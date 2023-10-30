@@ -1,4 +1,19 @@
-.main{
+/* .main{
     color: #7bdcb5;
-    color: #8ed1fc;
+    color: #a7dbfb;
+} */
+.common-tip {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100vw;
+    color: #a7dbfb;
+}
+
+/* button[type=primary] {
+    background-color: #a7dbfb !important;
+} */
+
+.van-picker__confirm {
+    color: #a7dbfb !important;
 }

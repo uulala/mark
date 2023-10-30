@@ -149,11 +149,11 @@ export default {
 </script>
 <style scoped>
 .mark-form {
-  padding: 5px 10px;
-  /* font-size: 18px; */
+  padding: 5px 5px;
+  font-size: 18px;
 }
 .form-item {
-  margin: 15px 5px;
+  margin: 15px 0;
   display: flex;
   align-items: center;
   /* margin: ; */
@@ -161,14 +161,12 @@ export default {
 .label {
   color: #333;
   margin-right: 5px;
+  flex-shrink: 0;
 }
 .btn-box {
   text-align: right;
 }
 .btn {
   margin: 0 5px;
-}
-button[type="primary"] {
-  background: #7bdcb5;
 }
 </style>

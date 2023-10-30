@@ -1,22 +1,21 @@
 <template>
   <view class="content">
-    <view class="title">任务进度</view>
+    <!-- <view class="title">任务进度</view> -->
 
     <move-show v-for="item in taskList" :key="item.childId">
       <template v-slot:text>
         <view class="list-wrapper">
+          <view class="show-time">{{item.markName}}</view>
           <view class="item-wrapper">
             <view class="progress-wrapper">
-              <view>{{item.markName}}</view>
+              <view>任务时间：{{item.count}}天 ({{item.showTime}})</view>
               <view
                 class="progress-line"
-                :style="{ width: `${item.rate}%`, 'background-color': item.rate === 100 ? '#7bdcb5' : '#8ed1fc' }"
+                :style="{ width: `${item.rate}%`, 'background-color': item.rate === 100 ? '#a7dbfb' : '#a7dbfb' }"
               ></view>
             </view>
-            <view :style="{color: item.rate === 100 ? '#7bdcb5' : '#8ed1fc'}">{{item.rate}}%</view>
+            <view :style="{color: item.rate === 100 ? '#7bdcb5' : '#a7dbfb'}">{{item.rate}}%</view>
           </view>
-
-          <view class="show-time">任务时间：{{item.count}}天 ({{item.showTime}})</view>
         </view>
       </template>
       <template v-slot:btn>
@@ -99,11 +98,11 @@ export default {
 
 <style>
 .content {
+  height: 100vh;
+  background: linear-gradient(to bottom, #a7dbfb, white, white, white);
 }
 .title {
   color: white;
-  background: #7bdcb5;
-  background: linear-gradient(to bottom right, #8ed1fc,  #7bdcb5);
   padding: 8px 5px;
 }
 .row {
@@ -119,10 +118,11 @@ export default {
 
 .progress-wrapper {
   position: relative;
-  width: 65vw;
+  width: 95%;
+  /* width: 65vw; */
   padding: 5px 5px;
   border-radius: 5px;
-  border: 1px dashed #7bdcb5;
+  border-bottom: 1px solid #a7dbfb;
 }
 .progress-line {
   position: absolute;
@@ -130,10 +130,12 @@ export default {
   top: 0;
   height: 100%;
   opacity: 0.5;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .show-time {
   /* color: #666; */
+  margin-bottom: 5px;
+  font-size: 18px;
 }
 .empty-tip {
   height: 50vh;
@@ -165,6 +167,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 .list-wrapper {
   padding: 8px;
